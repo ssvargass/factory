@@ -1,0 +1,171 @@
+/*Sitio desarrollado por Cristian Hernandez / TFDC*/
+@import url(../font-1/font-1.css);
+/*=======colors=======*/
+/*=======end=======*/
+/*=======Border radius=======*/
+/*=======end=======*/
+/*generico*/
+/* line 29, ../sass/style.scss */
+body {
+  font-size: 15px;
+  font-family: "eurofurence_regular";
+  color: #666666;
+  margin: 0;
+  height: 100%;
+}
+
+/* line 37, ../sass/style.scss */
+ul {
+  margin: 0;
+  padding: 0;
+}
+/* line 40, ../sass/style.scss */
+ul li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* line 46, ../sass/style.scss */
+a, a:link {
+  text-decoration: none;
+  font-family: "eurofurence_regular";
+}
+/* line 49, ../sass/style.scss */
+a:hover, a:link:hover {
+  text-decoration: underline;
+}
+
+/* line 52, ../sass/style.scss */
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+/* line 53, ../sass/style.scss */
+* html .clearfix {
+  zoom: 1;
+}
+
+/* IE6 */
+/* line 54, ../sass/style.scss */
+*:first-child + html .clearfix {
+  zoom: 1;
+}
+
+/* IE7 */
+/* line 56, ../sass/style.scss */
+.clear {
+  clear: both;
+}
+
+/* line 62, ../sass/style.scss */
+textarea,
+.form-email,
+.form-number,
+input[type="text"],
+input[type="password"] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  border: 1px solid #DDD;
+  margin: 0.5em 0;
+  padding: 0.5em 1em;
+}
+
+/*==end==*/
+/*artefactos*/
+/*==end==*/
+/*footer*/
+/* line 79, ../sass/style.scss */
+footer {
+  overflow: hidden;
+  *zoom: 1;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0 1em;
+  background: #333333;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+/* line 88, ../sass/style.scss */
+footer li {
+  display: inline-block;
+  padding: 0.5em 0.5em 0.5em 0;
+  vertical-align: middle;
+  border-right: 1px solid #222;
+}
+/* line 93, ../sass/style.scss */
+footer li a, footer li a:link {
+  font-family: "eurofurence_lightregular";
+  display: block;
+  color: white;
+  padding: 0.5em;
+}
+/* line 100, ../sass/style.scss */
+footer nav {
+  float: left;
+}
+/* line 102, ../sass/style.scss */
+footer nav li:first-child {
+  border: none;
+}
+/* line 104, ../sass/style.scss */
+footer nav li:first-child a, footer nav li:first-child a:link {
+  width: 85px;
+  height: 55px;
+  background: url(../images/logo.png) no-repeat center center;
+  text-indent: -5000px;
+  padding: 0;
+}
+/* line 113, ../sass/style.scss */
+footer .social {
+  float: right;
+  margin-top: 0.5em;
+}
+/* line 116, ../sass/style.scss */
+footer .social li {
+  border: none;
+  padding: 0.5em 0;
+}
+/* line 119, ../sass/style.scss */
+footer .social li a, footer .social li a:link {
+  display: block;
+  padding: 0.5em 0.25em;
+  text-indent: -5000px;
+  width: 30px;
+  height: 30px;
+  background: no-repeat center center transparent;
+}
+/* line 127, ../sass/style.scss */
+footer .social li a.yt {
+  background-image: url(../images/ico-yt.com);
+}
+/* line 128, ../sass/style.scss */
+footer .social li a.fb {
+  background-image: url(../images/ico-fb.png);
+}
+/* line 129, ../sass/style.scss */
+footer .social li a.tw {
+  background-image: url(../images/ico-tw.png);
+}
+/* line 130, ../sass/style.scss */
+footer .social li a.in {
+  background-image: url(../images/ico-in.png);
+}
+/* line 131, ../sass/style.scss */
+footer .social li a.gp {
+  background-image: url(../images/ico-g+.png);
+}
+
+/*==end==*/

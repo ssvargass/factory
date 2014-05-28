@@ -1,0 +1,136 @@
+/*Sitio desarrollado por Cristian Hernandez / TFDC*/
+
+@import "compass/css3";
+@import "compass/css3/box-sizing";
+@import "compass/css3/box-shadow";
+@import "compass";
+@import "compass/css3/border-radius";
+@import "compass/utilities";
+@import "compass/css3/transform";
+@import "../font-1/font-1.css";
+
+/*=======colors=======*/
+
+$factory-gray: 				#666666;
+$factory-gray-dark: 		#333333;
+$factory-gray-light: 		#DDDDDD;
+$factory-blue-dark: 		#75B9AE;
+$factory-blue-standard: 	#0AD3DD;
+
+/*=======end=======*/
+
+/*=======Border radius=======*/
+@mixin border-radius($radius) { -webkit-border-radius: $radius; -moz-border-radius: $radius; border-radius: $radius; }
+
+/*=======end=======*/
+
+/*generico*/
+
+body {
+	font-size: 15px;
+	font-family: "eurofurence_regular";
+	color: $factory-gray;
+	margin: 0;
+	height: 100%;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	li {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+}
+a, a:link { 
+	text-decoration: none;
+	font-family: "eurofurence_regular";
+	&:hover { text-decoration: underline;}
+}
+
+.clearfix:after { visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+* html .clearfix { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+
+.clear { clear: both;}
+
+textarea,
+.form-email,
+.form-number,
+input[type="text"],
+input[type="password"] {
+	@include box-sizing(border-box);
+	@include border-radius(0);
+	border: 1px solid #DDD;
+	margin: 0.5em 0;
+	padding: 0.5em 1em;
+}
+
+/*==end==*/
+
+/*artefactos*/
+
+/*==end==*/
+
+
+/*footer*/
+
+footer {
+	@include clearfix;
+	@include box-sizing(border-box);
+	padding: 0 1em;
+	background: $factory-gray-dark;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	li { 
+		display: inline-block;
+		padding: 0.5em 0.5em 0.5em 0;
+		vertical-align: middle;
+		border-right: 1px solid #222;
+		a, a:link {
+			font-family: "eurofurence_lightregular";
+			display: block;
+			color: white;
+			padding: 0.5em;
+		}
+	}
+	nav {
+		float: left;
+		li:first-child {
+			border: none;
+			a, a:link {
+				width: 85px;
+				height: 55px;
+				background: url(../images/logo.png) no-repeat center center;
+				text-indent: -5000px;
+				padding: 0;
+			}
+		}
+	}
+	.social {
+		float: right;
+		margin-top: 0.5em;
+		li {
+			border: none;
+			padding: 0.5em 0;
+			a, a:link {
+				display: block;
+				padding: 0.5em 0.25em;
+				text-indent: -5000px;
+				width: 30px;
+				height: 30px;
+				background: no-repeat center center transparent;
+			}
+			a.yt { background-image: url(../images/ico-yt.com)}
+			a.fb { background-image: url(../images/ico-fb.png)}
+			a.tw { background-image: url(../images/ico-tw.png)}
+			a.in { background-image: url(../images/ico-in.png)}
+			a.gp { background-image: url(../images/ico-g+.png)}
+		}
+	}
+}
+
+/*==end==*/
